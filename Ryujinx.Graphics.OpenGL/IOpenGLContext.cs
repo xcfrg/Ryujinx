@@ -16,7 +16,7 @@ namespace Ryujinx.Graphics.OpenGL
             }
             else if (OperatingSystem.IsLinux())
             {
-                return GLXHelper.GetCurrentContext() != IntPtr.Zero;
+                return EGLHelper.GetCurrentContext() != IntPtr.Zero;
             }
             else
             {
